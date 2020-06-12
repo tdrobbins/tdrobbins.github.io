@@ -1,131 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://tdrobbins.github.io/theme/stylesheet/style.min.css">
-
-
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="https://tdrobbins.github.io/theme/pygments/github.min.css">
-
-
-  <link rel="stylesheet" type="text/css" href="https://tdrobbins.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://tdrobbins.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://tdrobbins.github.io/theme/font-awesome/css/solid.css">
-
-
-    <link href="https://tdrobbins.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="tdr Atom">
-
-
-
-
-
-    <meta name="author" content="Tyler Robbins" />
-    <meta name="description" content="" />
-<meta property="og:site_name" content="tdr"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="tdr"/>
-<meta property="og:description" content=""/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://tdrobbins.github.io"/>
-
-  <title>tdr</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>tdr</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
-<body class="light-theme">
-  <aside>
-    <div>
-      <a href="https://tdrobbins.github.io">
-        <img src="https://tdrobbins.github.io/theme/img/profile.png" alt="" title="">
-      </a>
+<body>
+    <div id="page">
+        <header>
+            <div class="container">
+                <div id="name">
+                    <h1>Tyler Robbins</h1>
+                    <p>Hi! I'm Tyler. Use the links below if you want to contact me.</p>
+                </div>
 
-      <h1>
-        <a href="https://tdrobbins.github.io"></a>
-      </h1>
-
-
-
-      <nav>
-        <ul class="list">
-
-
-              <li>
-                <a target="_self"
-                   href="https://tdrobbins.github.io/pages/about.html#about">
-                  About
-                </a>
-              </li>
-
-            <li>
-              <a target="_self" href="http://getpelican.com/" >Pelican</a>
-            </li>
-            <li>
-              <a target="_self" href="http://python.org/" >Python.org</a>
-            </li>
-            <li>
-              <a target="_self" href="http://jinja.pocoo.org/" >Jinja2</a>
-            </li>
-            <li>
-              <a target="_self" href="#" >You can modify those links in your config file</a>
-            </li>
-        </ul>
-      </nav>
-
-      <ul class="social">
-          <li>
-            <a  class="sc-You can add links in your config file" href="#" target="_blank">
-              <i class="fab fa-You can add links in your config file"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-Another social link" href="#" target="_blank">
-              <i class="fab fa-Another social link"></i>
-            </a>
-          </li>
-      </ul>
+            </div>
+        </header>
+        <section class="contact">
+            <div class="container">
+                <ul>
+                    <a href="mailto:tyler@tdrobbins.com"><li><ion-icon name="mail"></ion-icon></li></a>
+                    <a href="https://www.linkedin.com/in/tyler-robbins-687561172/"><li><ion-icon name="logo-linkedin"></ion-icon></li></a>
+                    <a href="https://github.com/tdrobbins"><li><ion-icon name="logo-github"></ion-icon></ion-icon></li></a>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>Hosted on GitHub Pages | Tyler D. Robbins &#x1f12f; 2020 | <input type="checkbox" class="light-switch" autocomplete="off" ></p>
+            </div>
+        </footer>
     </div>
-
-  </aside>
-  <main>
-
-
-
-
-
-  <div class="pagination">
-  </div>
-
-
-
-    <footer>
-<p>&copy;  </p>
-<p>
-Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
-</p>    </footer>
-  </main>
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " tdr ",
-  "url" : "https://tdrobbins.github.io",
-  "image": "",
-  "description": ""
-}
-</script>
-
-
+    <script>
+        $(".light-switch").change(function(){
+            if($(this).is(":checked")){$("body").css("background-color","rgb(0, 43, 54)")}
+            else{$("body").css("background-color","rgb(253, 246, 227)");}
+        })
+    </script>
 </body>
 </html>
