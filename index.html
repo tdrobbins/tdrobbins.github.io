@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Tyler Robbins' website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </head>
 <body>
     <div id="page">
@@ -32,15 +34,26 @@
         </section>
         <footer>
             <div class="container">
-                <p>Hosted on GitHub Pages | Tyler D. Robbins &#x1f12f; 2020 | <input type="checkbox" class="light-switch" autocomplete="off" ></p>
+                <p>Hosted on GitHub Pages | Tyler D. Robbins <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./img/copyleft.png" style="height:9px; width:9px"></a> 2020 | <input type="checkbox" class="light-switch" autocomplete="off" ></p>
+
             </div>
         </footer>
     </div>
     <script>
-        $(".light-switch").change(function(){
-            if($(this).is(":checked")){$("body").css("background-color","rgb(0, 43, 54)")}
+        $(function(){
+            var client_hr = new Date().getHours();
+            if(client_hr >= 20 || client_hr <= 8) {
+                $(".light-switch").prop("checked",true);
+                $("body").css("background-color","rgb(0, 43, 54)");
+                }
+            else {$("body").css("background-color","rgb(253, 246, 227)");}
+
+            $(".light-switch").change(function(){
+            if($(this).is(":checked")){$("body").css("background-color","rgb(0, 43, 54)");}
             else{$("body").css("background-color","rgb(253, 246, 227)");}
         })
+        });
+
     </script>
 </body>
 </html>

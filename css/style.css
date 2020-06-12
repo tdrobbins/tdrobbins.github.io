@@ -5,16 +5,28 @@
 }
 
 body {
-    font: 18px/1.5 "Source Code Pro";
+    font: 18px/1.5 "Inter";
     padding: 0;
-    background-color: rgb(253, 246, 227);
+    background-color: rgb(0, 0, 0);
     color: rgb(101, 123, 131);
     text-align: center;
     transition: ease;
-    transition-duration: 333ms;
+    transition-duration: 200ms;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-body
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
 ul{
     padding: 0;
@@ -45,6 +57,7 @@ footer {
     bottom: 0;
     font-size: 12px;
     text-align: center;
+    font-family: "Fira Code";
 }
 
 footer input{
@@ -66,9 +79,15 @@ footer input{
 
 .light-switch:hover {
     background-color: rgb(0, 43, 54);
+    cursor: pointer;
 }
 
 .light-switch:checked:hover {
     background-color: rgb(253, 246, 227);
+}
+
+.copyleft {
+    width: 10px;
+    height: 10px;
 }
 
