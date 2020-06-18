@@ -46,7 +46,7 @@ ul{
     color: inherit;
 }
 
-section a :hover{
+.iconlink :hover{
     color: rgb(38, 139, 210);
 }
 
@@ -87,8 +87,16 @@ footer input{
     background-color: rgb(253, 246, 227);
 }
 
-.copyleft {
-    width: 10px;
-    height: 10px;
+#copyleft {
+    font-size: 12px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: rgb(101, 123, 131);
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+#copyleft:hover {
+    color: rgb(38, 139, 210);
 }
 
